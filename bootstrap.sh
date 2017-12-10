@@ -51,7 +51,7 @@ export DEBIAN_FRONTEND=noninteractive
 # Install MySQL quietly
 apt-get -q -y install mysql-server-5.5
 
-mysql -u root -e "CREATE DATABASE IF NOT EXISTS ledecolite2017"
+mysql -u root -e "CREATE DATABASE IF NOT EXISTS magento"
 mysql -u root -e "GRANT ALL PRIVILEGES ON ledecolite2017.* TO 'magentouser'@'localhost' IDENTIFIED BY 'password'"
 mysql -u root -e "FLUSH PRIVILEGES"
 
@@ -59,6 +59,6 @@ mysql -u root -e "FLUSH PRIVILEGES"
 # Install n98-magerun
 # --------------------
 cd /vagrant/httpdocs
-wget https://raw.github.com/netz98/n98-magerun/master/n98-magerun.phar
+curl -O https://files.magerun.net/n98-magerun.phar
 chmod +x ./n98-magerun.phar
-sudo mv ./n98-magerun.phar /usr/local/bin/
+sudo cp ./n98-magerun.phar /usr/local/bin/
