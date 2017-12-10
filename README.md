@@ -3,17 +3,24 @@ A very basic Magento 1 vagrant box.
 
 ## Usage
 
+Ensure all web files are within httpdocs:
+
+- bootstrap.sh
+- Vagrantfile
+- /httpdocs/ {{ web files in here }}
+- README.md
+
 **Site URL:** http://127.0.0.1:8080/
 
-**MySQL Host:** 127.0.0.1
-**MySQL Username:** magentouser
-**MySQL Password:** password
-**MySQL Database:** ledecolite2017 (defined in bootstrap.sh)
+- **MySQL Host:** 127.0.0.1
+- **MySQL Username:** magentouser
+- **MySQL Password:** password
+- **MySQL Database:** magento (defined in bootstrap.sh)
 
-**SSH Host:** 127.0.0.1
-**SSH User:** vagrant
-**SSH Password:** vagrant
-**SSH Port:** 2222
+- **SSH Host:** 127.0.0.1
+- **SSH User:** vagrant
+- **SSH Password:** vagrant
+- **SSH Port:** 2222
 
 ## Troubleshooting
 
