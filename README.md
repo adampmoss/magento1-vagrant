@@ -17,6 +17,9 @@ Ensure all web files are within httpdocs:
 - **MySQL Password:** password
 - **MySQL Database:** magento (defined in bootstrap.sh)
 
+- **Root Username:** root
+- **Root Password:** (none)
+
 - **SSH Host:** 127.0.0.1
 - **SSH User:** vagrant
 - **SSH Password:** vagrant
