@@ -52,7 +52,7 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get -q -y install mysql-server-5.5
 
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS magento"
-mysql -u root -e "GRANT ALL PRIVILEGES ON ledecolite2017.* TO 'magentouser'@'localhost' IDENTIFIED BY 'password'"
+mysql -u root -e "GRANT ALL PRIVILEGES ON magento.* TO 'magentouser'@'localhost' IDENTIFIED BY 'password'"
 mysql -u root -e "FLUSH PRIVILEGES"
 
 
